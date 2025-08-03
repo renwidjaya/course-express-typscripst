@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "paths": {
+      "@utils/*": ["src/utils/*"],
+      "@configs/*": ["src/configs/*"],
+      "@model/*": ["src/model/*"],
+      "@routes/*": ["src/routes/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@middlewares": ["src/middlewares"],
+      "@controller/*": ["src/controller/*"]
+    },
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "logs", "public"]
+}
